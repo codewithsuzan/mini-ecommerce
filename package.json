@@ -1,0 +1,23 @@
+{
+  "name": "mini-ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+ "scripts": {
+  "dev": "set NODE_ENV=development&& nodemon backend/src/server.js",
+  "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+  "start": "set NODE_ENV=production&& node backend/src/server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
